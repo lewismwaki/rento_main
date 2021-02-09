@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:rento/models/icons-model.dart';
 import 'package:rento/models/private-homes-model.dart';
-
-import 'file:///D:/LEWY/Dev/Projects/ROUGH/Flutter/rento_main/lib/screens/home-details/private-home-details-screen.dart';
+import 'package:rento/screens/home-details/private-home-details-screen.dart';
 
 class PrivateSectionColumns extends StatefulWidget {
   final Function toggleViewStyle;
@@ -411,8 +410,7 @@ class _PrivateSectionColumnsState extends State<PrivateSectionColumns> {
         ),
         //perfect homes column
         Column(
-          children:
-              navIcons.asMap().entries.map((MapEntry map) => _buildColumnTiles(map.key)).toList(),
+          children: navIcons.asMap().entries.map((MapEntry map) => _buildColumnTiles(map.key)).toList(),
         ),
         //separator
         Padding(

@@ -70,7 +70,6 @@ class _SignUpState extends State<SignUp> {
                   height: MediaQuery.of(context).size.height * 0.4457547169811321,
                   child: LayoutBuilder(
                     builder: (context, constraints) {
-                      double constrainedHeight = constraints.maxHeight;
                       return Container(
                         padding: EdgeInsets.only(top: 32.0, bottom: 32.0),
                         height: 387.0,
@@ -221,8 +220,7 @@ class _SignUpState extends State<SignUp> {
                                   if (val.length < 6) {
                                     return 'Password must be 6+ characters long';
                                   }
-                                  if ((val.contains(RegExp(r'[0-9]'))) &&
-                                      (val.contains(RegExp(r'[A-Z]')))) {
+                                  if ((val.contains(RegExp(r'[0-9]'))) && (val.contains(RegExp(r'[A-Z]')))) {
                                     return null;
                                   } else {
                                     return 'Password must contain one number & one uppercase letter';

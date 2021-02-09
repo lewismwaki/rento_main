@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_icomoon_icons/flutter_icomoon_icons.dart';
@@ -58,6 +57,7 @@ class _PerfectHomeDetailsScreenState extends State<PerfectHomeDetailsScreen> {
                     gradient: LinearGradient(
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
+                      
                       colors: [
                         Colors.black45,
                         Colors.transparent,
